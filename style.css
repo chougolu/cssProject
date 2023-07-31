@@ -1,0 +1,318 @@
+/* Navigation bar. */
+#logo-img {
+    width: 170px;
+    height: 78px;
+}
+
+/* Banner section. */
+#banner-section {
+    background-color: #eee;
+}
+
+.banner-left-box {
+    margin-top: 95px;
+}
+
+.banner-left-box h1 {
+    font-family: "Amatic SC", sans-serif;
+    font-size: 69px;
+}
+
+.banner-left-box p {
+    font-family: "Inter", sans-serif;
+}
+
+#banner-right-img {
+    width: 100%;
+    margin-top: 50px;
+}
+
+/* Card Section. */
+#card-section {
+    background-color: #eee;
+    padding: 20px;
+}
+
+.card-box {
+    -webkit-box-shadow: -2px 2px 13px 2px rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: -2px 2px 13px 2px rgba(0, 0, 0, 0.16);
+    box-shadow: -2px 2px 13px 2px rgba(0, 0, 0, 0.16);
+    border-radius: 15px;
+}
+
+.card-box i {
+    font-size: 38px;
+    color: red;
+    padding: 13px;
+    background: rgb(247, 205, 205);
+    border-radius: 50%;
+}
+
+/* Our menu section. */
+.menu-heading h1 {
+    font-family: "Amatic SC", sans-serif;
+    font-size: 50px;
+}
+
+.menu-heading h1 span {
+    font-family: "Amatic SC", sans-serif;
+    font-size: 50px;
+    color: red;
+}
+
+.menu-items ul li a {
+    border-bottom: 2px solid black;
+}
+
+.menu-items ul li a {
+    text-decoration: none;
+    color: black;
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+}
+
+.menu-items ul li a:hover {
+    color: red;
+}
+
+.menu-items ul li:hover {
+    color: red;
+}
+
+.menu-heading h2 {
+    font-family: "Amatic SC", sans-serif;
+    color: red;
+    font-family: "Inter", sans-serif;
+}
+
+.menu-box img {
+    width: 70%;
+}
+
+.menu-box h2,
+p {
+    font-family: "Inter", sans-serif;
+}
+
+.menu-box h1 {
+    color: red;
+    font-family: "Inter", sans-serif;
+}
+
+/* Testimonial section. */
+.testimonial-section {
+    background-color: #eee;
+}
+
+.testimonial-heading h1 {
+    font-family: "Amatic SC", sans-serif;
+    font-size: 50px;
+}
+
+.testimonial-heading h1 span {
+    font-family: "Amatic SC", sans-serif;
+    font-size: 50px;
+    color: red;
+}
+
+.test-img {
+    margin-top: 7px;
+}
+
+.test-content h5 i {
+    color: red;
+    font-size: 30px;
+}
+
+.test-content span i {
+    color: rgb(248, 184, 65);
+}
+
+.test-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 3px solid white
+}
+
+.testimonial-box .test-content {
+    border-left: 3px solid rgb(243, 18, 18);
+    padding: 10px;
+}
+
+/* chefs section. */
+#chefs-section {
+    background: #eee;
+}
+
+.chefs-box {
+    position: relative;
+}
+
+#img-chefs {
+    position: absolute;
+    top: 272px;
+}
+
+.chefs-box {
+    border-radius: 10px;
+}
+
+.chefs-box img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+#chefs-section h2{
+    font-family: "Amatic SC", sans-serif;
+    font-size: 50px;
+
+}
+#chefs-section p{
+    font-family: "Inter", sans-serif;
+
+}
+
+/* contact section. */
+.contact-heading h1 {
+    font-family: "Amatic SC", sans-serif;
+    font-size: 50px;
+}
+
+.contact-heading h1 span {
+    font-family: "Amatic SC", sans-serif;
+    font-size: 50px;
+    color: red;
+}
+
+.contact-map iframe {
+    width: 100%;
+}
+
+.contact-box {
+    background-color: #eee;
+}
+
+.contact-icon i {
+    background-color: rgb(199, 44, 44);
+    padding: 15px;
+    font-size: 40px;
+    color: white;
+    border-radius: 50%;
+}
+
+/* Footer section. */
+.footer {
+    background-color: #1f1f24;
+    height: auto;
+    padding: 50px 0px;
+}
+
+.footer-box h3,
+h6 {
+    font-family: "Inter", sans-serif;
+}
+
+.footer-box span {
+    font-size: 30px;
+    color: white;
+}
+
+.footer-body {
+    border-bottom: 1px solid white;
+    padding-bottom: 60px;
+}
+
+.footer-body .footer-box {
+    padding: 25px;
+}
+
+.end-foot {
+    color: white;
+    margin-top: 60px;
+}
+
+#send-message {
+    border-radius: 25px;
+    padding: 14px 60px;
+}
+
+form {
+    margin-top: 35px;
+    margin-bottom: 35px;
+    padding: 30px;
+    border-radius: 10px;
+    -webkit-box-shadow: -2px 2px 13px 2px rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: -2px 2px 13px 2px rgba(0, 0, 0, 0.16);
+    box-shadow: -2px 2px 13px 2px rgba(0, 0, 0, 0.16);
+    border-radius: 15px;
+}
+
+@media (max-width:500px) {
+
+    /* Banner section. */
+    #banner-content {
+        flex-direction: column;
+    }
+
+    .banner-left-box {
+        text-align: center;
+        margin-top: 0px;
+    }
+
+    #banner-right-img {
+        margin-top: 0px;
+    }
+
+    /* Card section. */
+
+    .card-content {
+        flex-direction: column;
+    }
+
+    .card-box {
+        margin-top: 0px;
+    }
+
+    #card-section {
+        padding: 0px;
+        margin-top: 0;
+    }
+
+    .menu-box-content {
+        flex-direction: column;
+    }
+
+    /* .menu-items li a{
+        font-size: 10px;
+    }
+    .menu-items li a{
+        padding: 0;
+    } */
+
+    .testimonial-box {
+        flex-direction: column;
+    }
+
+    /* chefs section. */
+    .chefs {
+        flex-direction: column;
+    }
+
+    .footer-body {
+        flex-direction: column;
+    }
+
+    .footer-box {
+        padding: 23px;
+    }
+
+    /* contact section. */
+    .contact-box {
+        flex-direction: column;
+    }
+
+    .contact-box .contact-content {
+        margin-left: 0px;
+    }
+
+}

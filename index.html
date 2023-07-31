@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yummy</title>
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous"> 
+    <!-- Style.css -->
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <!-- Google fonts.-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Anton&family=Fredoka+One&family=Rubik+Spray+Paint&family=Stint+Ultra+Condensed&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome. -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- wow.js -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="css/animate.css">
+    <style type="text/css">
+        /* Navigation bar. */
+#logo-img {
+    width: 170px;
+    height: 78px;
+}
+
+/* Banner section. */
+#banner-section {
+    background-color: #eee;
+}
+
+.banner-left-box {
+    margin-top: 95px;
+}
+
+.banner-left-box h1 {
+    font-family: "Amatic SC", sans-serif;
+    font-size: 69px;
+}
+
+.banner-left-box p {
+    font-family: "Inter", sans-serif;
+}
+
+#banner-right-img {
+    width: 100%;
+    margin-top: 50px;
+}
+
+/* Card Section. */
+#card-section {
+    background-color: #eee;
+    padding: 20px;
+}
+
+.card-box {
+    -webkit-box-shadow: -2px 2px 13px 2px rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: -2px 2px 13px 2px rgba(0, 0, 0, 0.16);
+    box-shadow: -2px 2px 13px 2px rgba(0, 0, 0, 0.16);
+    border-radius: 15px;
+}
+
+.card-box i {
+    font-size: 38px;
+    color: red;
+    padding: 13px;
+    background: rgb(247, 205, 205);
+    border-radius: 50%;
+}
+
+/* Our menu section. */
+.menu-heading h1 {
+    font-family: "Amatic SC", sans-serif;
+    font-size: 50px;
+}
+
+.menu-heading h1 span {
+    font-family: "Amatic SC", sans-serif;
+    font-size: 50px;
+    color: red;
+}
+
+.menu-items ul li a {
+    border-bottom: 2px solid black;
+}
+
+.menu-items ul li a {
+    text-decoration: none;
+    color: black;
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+}
+
+.menu-items ul li a:hover {
+    color: red;
+}
+
+.menu-items ul li:hover {
+    color: red;
+}
+
+.menu-heading h2 {
+    font-family: "Amatic SC", sans-serif;
+    color: red;
+    font-family: "Inter", sans-serif;
+}
+
+.menu-box img {
+    width: 70%;
+}
+
+.menu-box h2,
+p {
+    font-family: "Inter", sans-serif;
+}
+
+.menu-box h1 {
+    color: red;
+    font-family: "Inter", sans-serif;
+}
+
+/* Testimonial section. */
+.testimonial-section {
+    background-color: #eee;
+}
+
+.testimonial-heading h1 {
+    font-family: "Amatic SC", sans-serif;
+    font-size: 50px;
+}
+
+.testimonial-heading h1 span {
+    font-family: "Amatic SC", sans-serif;
+    font-size: 50px;
+    color: red;
+}
+
+.test-img {
+    margin-top: 7px;
+}
+
+.test-content h5 i {
+    color: red;
+    font-size: 30px;
+}
+
+.test-content span i {
+    color: rgb(248, 184, 65);
+}
+
+.test-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 3px solid white
+}
+
+.testimonial-box .test-content {
+    border-left: 3px solid rgb(243, 18, 18);
+    padding: 10px;
+}
+
+/* chefs section. */
+#chefs-section {
+    background: #eee;
+}
+
+.chefs-box {
+    position: relative;
+}
+
+#img-chefs {
+    position: absolute;
+    top: 272px;
+}
+
+.chefs-box {
+    border-radius: 10px;
+}
+
+.chefs-box img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+#chefs-section h2{
+    font-family: "Amatic SC", sans-serif;
+    font-size: 50px;
+
+}
+#chefs-section p{
+    font-family: "Inter", sans-serif;
+
+}
+
+/* contact section. */
+.contact-heading h1 {
+    font-family: "Amatic SC", sans-serif;
+    font-size: 50px;
+}
+
+.contact-heading h1 span {
+    font-family: "Amatic SC", sans-serif;
+    font-size: 50px;
+    color: red;
+}
+
+.contact-map iframe {
+    width: 100%;
+}
+
+.contact-box {
+    background-color: #eee;
+}
+
+.contact-icon i {
+    background-color: rgb(199, 44, 44);
+    padding: 15px;
+    font-size: 40px;
+    color: white;
+    border-radius: 50%;
+}
+
+/* Footer section. */
+.footer {
+    background-color: #1f1f24;
+    height: auto;
+    padding: 50px 0px;
+}
+
+.footer-box h3,
+h6 {
+    font-family: "Inter", sans-serif;
+}
+
+.footer-box span {
+    font-size: 30px;
+    color: white;
+}
+
+.footer-body {
+    border-bottom: 1px solid white;
+    padding-bottom: 60px;
+}
+
+.footer-body .footer-box {
+    padding: 25px;
+}
+
+.end-foot {
+    color: white;
+    margin-top: 60px;
+}
+
+#send-message {
+    border-radius: 25px;
+    padding: 14px 60px;
+}
+
+form {
+    margin-top: 35px;
+    margin-bottom: 35px;
+    padding: 30px;
+    border-radius: 10px;
+    -webkit-box-shadow: -2px 2px 13px 2px rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: -2px 2px 13px 2px rgba(0, 0, 0, 0.16);
+    box-shadow: -2px 2px 13px 2px rgba(0, 0, 0, 0.16);
+    border-radius: 15px;
+}
+
+@media (max-width:500px) {
+
+    /* Banner section. */
+    #banner-content {
+        flex-direction: column;
+    }
+
+    .banner-left-box {
+        text-align: center;
+        margin-top: 0px;
+    }
+
+    #banner-right-img {
+        margin-top: 0px;
+    }
+
+    /* Card section. */
+
+    .card-content {
+        flex-direction: column;
+    }
+
+    .card-box {
+        margin-top: 0px;
+    }
+
+    #card-section {
+        padding: 0px;
+        margin-top: 0;
+    }
+
+    .menu-box-content {
+        flex-direction: column;
+    }
+
+    /* .menu-items li a{
+        font-size: 10px;
+    }
+    .menu-items li a{
+        padding: 0;
+    } */
+
+    .testimonial-box {
+        flex-direction: column;
+    }
+
+    /* chefs section. */
+    .chefs {
+        flex-direction: column;
+    }
+
+    .footer-body {
+        flex-direction: column;
+    }
+
+    .footer-box {
+        padding: 23px;
+    }
+
+    /* contact section. */
+    .contact-box {
+        flex-direction: column;
+    }
+
+    .contact-box .contact-content {
+        margin-left: 0px;
+    }
+
+}
+    </style>
+    
+</head>
+
+<body>
+    <!-- Navigation bar. -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <img id="logo-img" class="navbar-brand  animate__animated wow animate__zoomIn"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQfdjH6PWT8mNmMQMvQrbkmrjqOp4w1ODoYg&usqp=CAUhttps://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQfdjH6PWT8mNmMQMvQrbkmrjqOp4w1ODoYg&usqp=CAUhttps://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQfdjH6PWT8mNmMQMvQrbkmrjqOp4w1ODoYg&usqp=CAU"
+            alt="">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link active" href="#">About <span class="sr-only">(current)</span></a>
+                <a class="nav-link active" href="#">Services <span class="sr-only">(current)</span></a>
+                <a class="nav-link active" href="#">Blog <span class="sr-only">(current)</span></a>
+                <a class="nav-link active" href="#">Menu <span class="sr-only">(current)</span></a>
+            </div>
+        </div>
+    </nav>
+    <!-- Banner section. -->
+    <section id="banner-section">
+        <div class="container">
+            <div id="banner-content" class="d-flex justify-content-center">
+                <div class="banner-left-box p-5 animate__animated wow animate__zoomIn">
+                    <h1 class="p-2">Enjoy Your Healthy<br>
+                        Delicious Food</h1>
+                    <p class="p-2">Sed autem laudantium dolores. Voluptatem itaque ea consequatur eveniet. Eum quas
+                        beatae cumque eum quaerat.</p>
+                    <button class="btn btn-danger p-2">Book A Table</button>
+                </div>
+                <div class="banner-right-box align-content-center p-4 animate__animated wow animate__zoomIn">
+                    <img id="banner-right-img" class="image-flute"
+                        src="https://bootstrapmade.com/demo/templates/Yummy/assets/img/hero-img.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Card Section. -->
+    <section id="card-section">
+        <div class="container">
+            <div class="row card-content">
+                <div class="col-sm-3  mt-5 ">
+                    <div class="card-box text-center bg-light p-4 animate__animated wow animate__zoomIn">
+                        <i class="fa-regular fa-clipboard p-2"></i>
+                        <h2 class=" p-2 text-center">Corporis voluptates officia eiusmod</h2>
+                        <p class=" p-2 text-center">Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris
+                            nisi ut aliquip</p>
+                    </div>
+                </div>
+                <div class="col-sm-3  mt-5 ">
+                    <div class="card-box text-center bg-light p-4 animate__animated wow animate__zoomIn">
+                        <i class="fa-regular fa-clipboard p-2"></i>
+                        <h2 class=" p-2">Corporis voluptates officia eiusmod</h2>
+                        <p class=" p-2">Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut
+                            aliquip</p>
+                    </div>
+                </div>
+                <div class="col-sm-3  mt-5 ">
+                    <div class="card-box text-center bg-light p-4 animate__animated wow animate__zoomIn">
+                        <i class="fa-regular fa-clipboard p-2"></i>
+                        <h2 class=" p-2">Corporis voluptates officia eiusmod</h2>
+                        <p class=" p-2">Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut
+                            aliquip</p>
+                    </div>
+                </div>
+                <div class="col-sm-3  mt-5 ">
+                    <div class="card-box text-center bg-light p-4 animate__animated wow animate__zoomIn">
+                        <i class="fa-regular fa-clipboard p-2"></i>
+                        <h2 class=" p-2">Corporis voluptates officia eiusmod</h2>
+                        <p class=" p-2">Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut
+                            aliquip</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Menu section. -->
+    <section class="mt-5">
+        <div class="container">
+            <div class="menu-heading">
+                <p class="text-center animate__animated wow animate__zoomIn">OUR MENU</p>
+                <h1 class="text-center animate__animated wow animate__zoomIn">Check Our <span> Yummy Menu</span></h1>
+                <div class="menu-items">
+                    <ul class="d-flex justify-content-center">
+                        <li class="d-inline-block"><a href="#">Starters</a></li>
+                        <li class="d-inline-block"><a href="#">Breakfast</a></li>
+                        <li class="d-inline-block"><a href="#">Lunch</a></li>
+                        <li class="d-inline-block"><a href="#">Dinner</a></li>
+                    </ul>
+                </div>
+                <p class="text-center">MENU</p>
+                <h2 class="text-center animate__animated wow animate__zoomIn">Breakfast</h2>
+            </div>
+            <div class="row mt-5 menu-box-content">
+                <div class="col-sm-4 menu-box text-center">
+                    <img class="img-flute  animate__animated wow animate__zoomIn"
+                        src="https://bootstrapmade.com/demo/templates/Yummy/assets/img/menu/menu-item-1.png" alt="">
+                    <h2>Magnam Tiste</h2>
+                    <p>Lorem, deren, trataro, filede, nerada</p>
+                    <h1>$5.95</h1>
+                </div>
+                <div class="col-sm-4 menu-box text-center">
+                    <img class="img-flute  animate__animated wow animate__zoomIn"
+                        src="https://bootstrapmade.com/demo/templates/Yummy/assets/img/menu/menu-item-2.png" alt="">
+                    <h2>Magnam Tiste</h2>
+                    <p>Lorem, deren, trataro, filede, nerada</p>
+                    <h1>$5.95</h1>
+                </div>
+                <div class="col-sm-4 menu-box text-center">
+                    <img class="img-flute animate__animated wow animate__zoomIn"
+                        src="https://bootstrapmade.com/demo/templates/Yummy/assets/img/menu/menu-item-3.png" alt="">
+                    <h2>Magnam Tiste</h2>
+                    <p>Lorem, deren, trataro, filede, nerada</p>
+                    <h1>$5.95</h1>
+                </div>
+            </div>
+            <div class="row mt-5 menu-box-content">
+                <div class="col-sm-4 menu-box text-center">
+                    <img class="img-flute animate__animated wow animate__zoomIn"
+                        src="https://bootstrapmade.com/demo/templates/Yummy/assets/img/menu/menu-item-4.png" alt="">
+                    <h2>Magnam Tiste</h2>
+                    <p>Lorem, deren, trataro, filede, nerada</p>
+                    <h1>$5.95</h1>
+                </div>
+                <div class="col-sm-4 menu-box text-center">
+                    <img class="img-flute animate__animated wow animate__zoomIn"
+                        src="https://bootstrapmade.com/demo/templates/Yummy/assets/img/menu/menu-item-5.png" alt="">
+                    <h2>Magnam Tiste</h2>
+                    <p>Lorem, deren, trataro, filede, nerada</p>
+                    <h1>$5.95</h1>
+                </div>
+                <div class="col-sm-4 menu-box text-center">
+                    <img class="img-flute animate__animated wow animate__zoomIn"
+                        src="https://bootstrapmade.com/demo/templates/Yummy/assets/img/menu/menu-item-6.png" alt="">
+                    <h2>Magnam Tiste</h2>
+                    <p>Lorem, deren, trataro, filede, nerada</p>
+                    <h1>$5.95</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial section. -->
+    <section class="mt-5 testimonial-section">
+        <div class="container pt-5 pb-5">
+            <div class="testimonial-heading">
+                <p class="text-center">Testimonial</p>
+                <h1 class="text-center animate__animated wow animate__zoomIn">What Are They<span>Saying About Us</span></h1>
+            </div>
+            <div class="testimonial-box row mt-5">
+                <div class="col-sm-9">
+                    <div class="test-content mt-5 ">
+                        <h5><i class="fa-solid fa-quote-left"></i> Lorem, ipsum dolor sit amet eligendi odio velit iusto
+                            facery provident Lorem, ipsum dolor sit amet eligendi odio velit iusto facery provident
+                            mollitia fugiat aspernatur praesentium nobis laboriosam in molestias dolore itaque.
+                            Incidunt. <i class="fa-solid fa-quote-right"></i></h5>
+                        <h4>Sara Wilsson</h4>
+                        <p>Designer</p>
+                        <span><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i></span>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="test-img">
+                        <img class="img-flute animate__animated wow animate__zoomIn"
+                            src="https://bootstrapmade.com/demo/templates/Yummy/assets/img/testimonials/testimonials-3.jpg"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="chefs-section">
+        <h2 class="text-center p-2 animate__animated wow animate__zoomIn">Chefs</h2>
+        <p class="text-center">Our Proffesional Chefs</p>
+        <div class="container">
+            <div class="row chefs">
+                <div class="col-sm-4">
+                    <div class="chefs-box bg-white text-center animate__animated wow animate__zoomIn">
+                        <img src="https://bootstrapmade.com/demo/templates/Yummy/assets/img/chefs/chefs-1.jpg"
+                            class="img-fluid" alt="">
+                        <h4>Walter White</h4>
+                        <span>Master Chef</span>
+                        <p>Velit aut quia fugit et et. tenetur ipsa quae aut. Ipsumexercitationem iure minima enim
+                            corporis et voluptate.</p>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="chefs-box bg-white text-center animate__animated wow animate__zoomIn">
+                        <img src="https://bootstrapmade.com/demo/templates/Yummy/assets/img/chefs/chefs-2.jpg"
+                            class="img-fluid" alt="">
+                        <h4>Walter White</h4>
+                        <span>Master Chef</span>
+                        <p>Velit aut quia fugit et et. tenetur ipsa quae aut. Ipsumexercitationem iure minima enim
+                            corporis et voluptate.</p>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="chefs-box bg-white text-center animate__animated wow animate__zoomIn">
+                        <img src="https://bootstrapmade.com/demo/templates/Yummy/assets/img/chefs/chefs-3.jpg"
+                            class="img-fluid" alt="">
+                        <h4>Walter White</h4>
+                        <span>Master Chef</span>
+                        <p>Velit aut quia fugit et et. tenetur ipsa quae aut. Ipsumexercitationem iure minima enim
+                            corporis et voluptate.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- contact section. -->
+    <section>
+        <div class="container">
+            <div class="contact-heading mt-5">
+                <p class="text-center">CONTACT</p>
+                <h1 class="text-center animate__animated wow animate__zoomIn">Need Help?<span>Contact Us</span></h1>
+            </div>
+            <div class="contact-map mt-5 animate__animated wow animate__zoomIn">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3681.201371255203!2d75.86186491418897!3d22.68354643460743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962fcf26803dfd7%3A0xd203646f240af059!2sBholaram%20Ustad%20Marg%2C%20Shivampuri%20Colony%2C%20Indore%2C%20Madhya%20Pradesh%20452014!5e0!3m2!1sen!2sin!4v1672649131139!5m2!1sen!2sin"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="row mt-5">
+                <div class="col-sm-6">
+                    <div class="contact-box d-flex justify-content-center p-4  mb-3 animate__animated wow animate__zoomIn">
+                        <div class="contact-icon  d-flex align-items-center p-3">
+                            <i class="fa-solid fa-map"></i>
+                        </div>
+                        <div class="contact-content p-3">
+                            <h4>Our Address</h4>
+                            <h6>A108 Adam Street, New York, NY 535022</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="contact-box d-flex justify-content-center p-4 animate__animated wow animate__zoomIn">
+                        <div class="contact-icon  d-flex align-items-center p-3">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div class="contact-content p-3">
+                            <h4>Email Us</h4>
+                            <h6>contact@example.com</h6>
+                        </div>
+                    </div>
+                    <div class="col-sm-6"></div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-sm-6">
+                    <div class="contact-box d-flex justify-content-center p-4  mb-3 animate__animated wow animate__zoomIn">
+                        <div class="contact-icon  d-flex align-items-center p-3">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div class="contact-content p-3">
+                            <h4>Call Us</h4>
+                            <h6>+1 5589 55488 55</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="contact-box d-flex justify-content-center p-4 animate__animated wow animate__zoomIn">
+                        <div class="contact-icon  d-flex align-items-center p-3">
+                            <i class="fa-sharp fa-solid fa-share-nodes"></i>
+                        </div>
+                        <div class="contact-content p-3">
+                            <h4>Opening Hours</h4>
+                            <h6>Mon-Sat: 11AM - 23PM; Sunday: Closed</h6>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="container">
+                <form action="" class=" animate__animated wow animate__zoomIn">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder="Your Email">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Your Name">
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Subject">
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <textarea type="text" class="form-control" placeholder="Message"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 text-center ">
+                            <button id="send-message" type="submit" class="btn btn-danger text-center ">Send
+                                Message</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+    </section>
+    <!-- Footer. -->
+    <section class="footer">
+        <div class="container">
+            <div class="row footer-body">
+                <div class="col-sm-3 footer-box animate__animated wow animate__zoomIn">
+                    <h4 class="text-light"><i class="fa-solid fa-location-dot"></i>&nbsp;&nbsp;Address</h4>
+                    <h6 class="text-light">A108 Adam Street</h6>
+                    <h6 class="text-light">New York, NY 535022 - US</h6>
+                </div>
+                <div class="col-sm-3 footer-box animate__animated wow animate__zoomIn">
+                    <h4 class="text-light"><i class="fa-solid fa-phone"></i>&nbsp;&nbsp;Reservations</h4>
+                    <h6 class="text-light">Phone: +1 5589 55488 55</h6>
+                    <h6 class="text-light">Email: info@example.com</h6>
+                </div>
+                <div class="col-sm-3 footer-box animate__animated wow animate__zoomIn">
+                    <h4 class="text-light"><i class="fa-regular fa-clock"></i>&nbsp;&nbsp;Opening Hours</h4>
+                    <h6 class="text-light">Mon-Sat: 11AM - 23PM</h6>
+                    <h6 class="text-light">Sunday: Closed</h6>
+                </div>
+                <div class="col-sm-3 footer-box animate__animated wow animate__zoomIn">
+                    <h4 class="text-light">Follow Us</h4>
+                    <span><i class="fa-brands fa-twitter"></i>&nbsp;&nbsp;<i
+                            class="fa-brands fa-facebook-f"></i>&nbsp;&nbsp;<i
+                            class="fa-brands fa-instagram"></i>&nbsp;&nbsp;<i class="fa-brands fa-linkedin"></i></span>
+                </div>
+            </div>
+
+        </div>
+        <div class="container">
+            <div class="end-foot">
+                <h6 class="text-center animate__animated wow animate__zoomIn">© Copyright Yummy. All Rights Reserved</h6>
+                <h6 class="text-center animate__animated wow animate__zoomIn">Designed by BootstrapMade</h6>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
